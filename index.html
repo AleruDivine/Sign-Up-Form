@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign up Form</title>
+  </head>
+  <body class="all">
+    <div class="container">
+      <div class="titles">
+        <h1 class="title">kiliGoals</h1>
+        <p class="acct">
+          Create a free account or <a href="#" style="color: #000000">Log in</a>
+        </p>
+      </div>
+
+      <hr />
+      <form action="/signup" method="post" name="signupForm" onsubmit="return validateSignupForm()">
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" class="username" name="username"required />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" class="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" class="password" name="password" required/>
+          <br />
+        </div>
+
+        <div>
+          <label for="password2">Re-enter Password:</label>
+          <input type="password" class="password2" name="password2"required /><br /><br />
+        </div>
+        <div>
+          <button type="submit" class="button">SIGN UP</button>
+
+          <p>
+            By clicking sign up, you agree to
+            <a href="#" style="color: #000000">Terms & Conditions</a>
+          </p>
+          <p>
+            To learn more about how we collect, use, share and protect your
+            personal data
+            <a href="#" style="color: #000000">Privacy and Policy</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="./valid.js"></script>
+  </body>
+</html>
+
